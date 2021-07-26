@@ -1,8 +1,12 @@
 # Description
 This project is made by Create-React-App.
+
 The test code is locate in the useEffect hook of `App.tsx`, which using dexie to insert or update 10k records into indexeddb.
+
 The dexie's database definition is  locate in `SecurityDbDefinition.ts`.
+
 In my machine, the result of electron(avg 300 records/s) is 20+ slower than chrome (7k records/s).
+
 I was tried to downgrade the electron's version to 8.x, but it does not work, still slow.
 
 # Reproduction Step
